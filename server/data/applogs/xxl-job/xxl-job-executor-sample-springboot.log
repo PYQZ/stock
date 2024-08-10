@@ -1,0 +1,30 @@
+2024-06-27 22:39:48,127 INFO [background-preinit] o.h.validator.internal.util.Version [Version.java : 21] HV000001: Hibernate Validator 6.2.0.Final
+2024-06-27 22:39:48,124 INFO [main] com.itheima.stock.JobApp [StartupInfoLogger.java : 55] Starting JobApp using Java 1.8.0_302 on py-qzdeMac-Pro.local with PID 13256 (/Volumes/data/java/javaTest/project01/stock_parent/stock_job/target/classes started by py-qz in /Volumes/data/java/javaTest/project01/stock_parent)
+2024-06-27 22:39:48,131 INFO [main] com.itheima.stock.JobApp [SpringApplication.java : 663] The following profiles are active: cache,stock,mq,xxljob
+2024-06-27 22:39:49,860 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 108] Tomcat initialized with port(s): 8092 (http)
+2024-06-27 22:39:49,871 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8092"]
+2024-06-27 22:39:49,872 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2024-06-27 22:39:49,872 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-06-27 22:39:50,029 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2024-06-27 22:39:50,030 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java : 290] Root WebApplicationContext: initialization completed in 1567 ms
+2024-06-27 22:39:50,262 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java : 56] Init DruidDataSource
+2024-06-27 22:39:50,672 INFO [main] c.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 998] {dataSource-1} inited
+2024-06-27 22:39:51,475 INFO [main] c.itheima.stock.config.XxlJobConfig [XxlJobConfig.java : 46] >>>>>>>>>>> xxl-job config init.
+2024-06-27 22:39:52,052 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 178] >>>>>>>>>>> xxl-job register jobhandler success, name:stockJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@63f9b562[class com.itheima.stock.job.StockJob#demoJobHandler]
+2024-06-27 22:39:52,053 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 178] >>>>>>>>>>> xxl-job register jobhandler success, name:getInnerMarketInfo, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@20ead579[class com.itheima.stock.job.StockJob#getStockInfos]
+2024-06-27 22:39:52,053 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 178] >>>>>>>>>>> xxl-job register jobhandler success, name:getStockRtIndex, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5426cb36[class com.itheima.stock.job.StockJob#getStockRtIndex]
+2024-06-27 22:39:52,054 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 178] >>>>>>>>>>> xxl-job register jobhandler success, name:getStockSectorRtIndex, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@65e22def[class com.itheima.stock.job.StockJob#getStockSectorRtIndex]
+2024-06-27 22:39:52,147 WARN [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 152] >>>>>>>>>>> xxl-job accessToken is empty. To ensure system security, please set the accessToken.
+2024-06-27 22:39:52,233 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8092"]
+2024-06-27 22:39:52,256 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 220] Tomcat started on port(s): 8092 (http) with context path ''
+2024-06-27 22:39:52,272 INFO [main] com.itheima.stock.JobApp [StartupInfoLogger.java : 61] Started JobApp in 4.809 seconds (JVM running for 5.833)
+2024-06-27 22:39:52,344 INFO [Thread-14] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 86] >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 7979
+2024-06-27 22:49:02,707 INFO [Thread-14] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 96] >>>>>>>>>>> xxl-job remoting server stop.
+2024-06-27 22:49:02,715 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 87] >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='itheima-stock-executor', registryValue='http://10.37.129.2:7979/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+2024-06-27 22:49:02,716 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 105] >>>>>>>>>>> xxl-job, executor registry thread destory.
+2024-06-27 22:49:02,716 INFO [SpringApplicationShutdownHook] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 125] >>>>>>>>>>> xxl-job remoting server destroy success.
+2024-06-27 22:49:02,717 INFO [xxl-job, executor JobLogFileCleanThread] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 99] >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
+2024-06-27 22:49:02,717 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 98] >>>>>>>>>>> xxl-job, executor callback thread destory.
+2024-06-27 22:49:02,718 INFO [Thread-13] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 128] >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2024-06-27 22:49:02,721 INFO [SpringApplicationShutdownHook] c.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 2071] {dataSource-1} closing ...
+2024-06-27 22:49:02,728 INFO [SpringApplicationShutdownHook] c.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 2144] {dataSource-1} closed
